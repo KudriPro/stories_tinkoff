@@ -47,7 +47,6 @@
       padding: 20px;
       padding-right: 30px;
       height: 100vh;
-      height: calc(var(--vh, 1vh) * 100);
       color: black;
       border-bottom: 1px solid #97887e;
       background-color: #c2afa1;
@@ -148,13 +147,5 @@
       </div>  
     </li>
   </ul>
-  <script>
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-    window.addEventListener('resize', () => {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
-  </script>
 </body>
 </html>
