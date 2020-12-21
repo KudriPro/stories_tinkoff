@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-width: 320px;
+      font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 25px 15px 25px;
+      margin-top: 10px;
+      color: black;
+      text-align: left;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: normal;
+      background-color: #ffdd2c;
+      border-radius: 27.25px;
+    }
+    .stories {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .stories-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 20px;
+      padding-right: 30px;
+      height: 100vh;
+      color: black;
+      border-bottom: 1px solid #97887e;
+      background-color: #c2afa1;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+    }
+    .stories-item p {
+      margin-bottom: 0;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 18.45px;
+    }
+    .stories-item.header {
+      background-image: url("img/stories2/crisis-1.png");
+      
+    }
+    .stories-item.stories--1 {
+      background-image: url("img/stories2/crisis-2.png");
+      background-position: top center;
+    }
+    .stories-item.stories--2 {
+      background-image: url("img/stories2/crisis-3.png");
+    }
+    .stories-item.stories--3 {
+      background-image: url("img/stories2/crisis-4.png");
+    }
+    .stories-item.stories--4 {
+      background-image: url("img/stories2/crisis-5.png");
+    }
+    .stories-title {
+      font-size: 30px;
+      font-weight: 800;
+      margin: 0;
+    }
+    .stories-title.header {
+      margin-top: 20px;
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .text-group {
+      margin-bottom: auto;
+    }
+    .text-group-bt {
+      margin-top: auto;
+    }
+    @media(min-width:440px) {
+      .stories-item.header {
+        background-position: bottom 30% center;
+      }
+      .stories .stories-item {
+        background-position: top 50% center;
+      }
+    }
+    @media(min-width:840px) {
+      .stories {
+        width: 400px;
+        height: 600px;
+        margin: 0 auto;
+      }
+      /* .stories-item {
+        background-position: center center;
+      } */
+    }
+  </style>
+
+  <ul class="stories">
+    <li class="stories-item header">
+      <div class="text-group">
+        <h1 class="stories-title header">Как в России справлялись <br>с кризисами</h1>
+        <p>В&nbsp;истории нашей страны было много кризисов, но&nbsp;все постепенно удалось преодолеть. Рассказываем про&nbsp;те, что были до&nbsp;революции и&nbsp;в&nbsp;СССР.</p>
+      </div>
+    </li>
+    <li class="stories-item stories--1">
+      <div class="text-group-bt">
+        <h1 class="stories-title">1866—1867</h1>
+        <p>В&nbsp;России производили больше тканей, чем нужно, а&nbsp;за&nbsp;рубежом упали цены на&nbsp;хлопок&nbsp;&mdash; экспортировать выгодно не&nbsp;получалось. Экономику спасли железные дороги: их&nbsp;строительство помогло развить угольную промышленность и&nbsp;металлургию.</p>
+      </div>   
+    </li>
+    <li class="stories-item stories--2">
+      <div class="text-group-bt">
+        <h1 class="stories-title">1873—1875</h1>
+        <p>Упали фондовые рынки Европы и&nbsp;США, а&nbsp;в&nbsp;России было перепроизводство товаров&nbsp;&mdash; начались банкротства компаний. Промышленность удалось спасти благодаря введению высоких пошлин на&nbsp;импортные товары.</p>
+      </div> 
+    </li>
+    <li class="stories-item stories--3">
+      <div class="text-group-bt">
+        <h1 class="stories-title">1900—1903</h1>
+        <p>В&nbsp;эти годы произошел мировой кризис, а&nbsp;российская промышленность была менее развитой, чем в&nbsp;других странах. Чтобы преодолеть кризис, государство поддержало крупные компании и&nbsp;банки деньгами и&nbsp;сократило заказы за&nbsp;границей.</p>
+      </div>  
+    </li>
+    <li class="stories-item stories--4">
+      <div class="text-group-bt">
+        <h1 class="stories-title">1923—1924</h1>
+        <p>Товары стоили дорого, потому что экономика сильно пострадала из-за гражданской войны. Чтобы справиться с&nbsp;кризисом, компании уменьшили издержки производства: сократили персонал и&nbsp;количество посредников. С&nbsp;какими еще кризисами справились в&nbsp;России&nbsp;&mdash; в&nbsp;статье Т&nbsp;&mdash;&nbsp;Ж.</p>
+        <a class="btn" href="https://journal.tinkoff.ru/short/arctic-fox/?utm_source=stories&utm_medium=mobile&utm_campaign=">Интересно</a>
+      </div>  
+    </li>
+  </ul>
+</body>
+</html>

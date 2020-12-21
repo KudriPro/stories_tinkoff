@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-width: 320px;
+      font-family: "Montserrat", Helvetica, Arial, sans-serif;
+      background-color: rgb(153, 142, 142);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 25px 15px 25px;
+      color: black;
+      text-align: left;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: normal;
+      background-color: #ffdd2c;
+      border-radius: 27.25px;
+    }
+    .stories {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .stories-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 20px;
+      padding-right: 40px;
+      height: 100vh;
+      color: white;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+    }
+    .stories-item::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+      z-index: -1;
+    }
+    .stories-item p {
+      font-size: 21px;
+      font-weight: normal;
+      font-family: Helvetica,Arial,sans-serif;
+    }
+    .stories-item.cocoa {
+      background-image: url("img/stories1/1-cacao.jpg");
+      
+    }
+    .stories-item.types {
+      background-image: url("img/stories1/2-chelovek.jpg");
+      background-position: top center;
+    }
+    .stories-item.doublebee {
+      background-image: url("img/stories1/3-dablb.jpg");
+    }
+    .stories-item.erna {
+      background-image: url("img/stories1/4-erna.jpg");
+    }
+    .stories-item.milk-beans {
+      background-image: url("img/stories1/5-Milk&Beans.jpg");
+    }
+    .stories-item.eclair {
+      background-image: url("img/stories1/6-claire.jpg");
+    }
+    .stories-item.coffeemania {
+      background-image: url("img/stories1/7-coffemania.jpg");
+    }
+    .stories-item.bar08 {
+      background-image: url("img/stories1/8-nesluchaino.jpg");
+    }
+    .stories-title {
+      font-size: 30px;
+      font-weight: 800;
+      margin: 0;
+    }
+    .stories-title.cocoa {
+      font-size: 50px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .text-group {
+      margin-top: auto;
+    }
+    @media(min-width:440px) {
+      .stories-item {
+        background-position: center center;
+      }
+    }
+    @media(min-width:840px) {
+      .stories {
+        width: 400px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+
+  <ul class="stories">
+    <li class="stories-item cocoa">
+      <div class="text-group">
+        <h1 class="stories-title cocoa">Где пить <br>какао <br>в Москве</h1>
+        <p>Вместе с десертами или навынос</p>
+      </div>
+    </li>
+    <li class="stories-item types">
+      <div class="text-group">
+        <h1 class="stories-title">Человек и пароход</h1>
+        <p>У корнера на Даниловском рынке есть целый раздел с какао. Выбрать можно более плотный и шоколадный (почти горячий шоколад) или легкий, молочный. Но настоящий хит здесь — бодрящий какао-масала со специями.</p>
+        <a class="btn" href="https://www.instagram.com/chip_coffee">Подробнее</a>
+      </div>   
+    </li>
+    <li class="stories-item doublebee">
+      <div class="text-group">
+        <h1 class="stories-title">Даблби</h1>
+        <p>В кофейной сети в меню только одна постоянная версия какао, зато максимально близкая к золотому стандарту: умеренно молочная, насыщенно шоколадная и не приторно сладкая.</p>
+        <a class="btn" href="https://www.instagram.com/doublebcoffeetea">Подробнее</a>
+      </div> 
+    </li>
+    <li class="stories-item erna">
+      <div class="text-group">
+        <h1 class="stories-title">Эрна</h1>
+        <p>В самой модной кофейне в окрестностях Якиманки готовят французский какао — в меру молочный и не слишком сладкий. К нему берите бриошь с арахисом и клубникой и отправляйтесь изучать нарядные особняки Полянки.</p>
+        <a class="btn" href="https://www.instagram.com/erna.coffee/">Подробнее</a>
+      </div>  
+    </li>
+    <li class="stories-item milk-beans">
+      <div class="text-group">
+        <h1 class="stories-title">Milk&Beans</h1>
+        <p>В симпатичной кофейне на Мичуринском проспекте без лишней сладости готовят пряный какао со специями, мятный какао с сиропом или плотный шоколадно-цитрусовый. Есть королевский какао — кроме сливок в него добавляют шот эспрессо.</p>
+        <a class="btn" href="https://www.instagram.com/milk_and_beans/">Подробнее</a>
+      </div>  
+    </li>
+    <li class="stories-item eclair">
+      <div class="text-group">
+        <h1 class="stories-title">Эклерная «Клер»</h1>
+        <p>Настоящий экспериментальный напиток: в эклерной на Земляном Валу какао готовят с имбирем. От этого он приобретает островато-пряный привкус и бодрит не хуже кофе.</p>
+        <a class="btn" href="https://www.instagram.com/eklernayakler/">Подробнее</a>
+      </div>
+    </li>
+    <li class="stories-item coffeemania">
+      <div class="text-group">
+        <h1 class="stories-title">Кофемания</h1>
+        <p>Плотный шелковистый напиток с узором в сети ресторанов готовят на основе бельгийского горячего шоколада и молока. И наливают с собой в нарядный, яркий стакан.</p>
+        <a class="btn" href="https://www.instagram.com/coffeemania.ru/">Подробнее</a>
+      </div>
+    </li>
+    <li class="stories-item bar08">
+      <div class="text-group">
+        <h1 class="stories-title">Неслучайно 08|08</h1>
+        <p>В какао-баре на Шмитовском напиток готовят несколькими способами: есть классический, взбитый, охлажденный, концентрированный шоколадный шот и густой горячий шоколад. Какао-бобы, на которых приготовят какао, можно выбрать самому.</p>
+        <a class="btn" href="https://www.instagram.com/nesluchajno08.08/">Подробнее</a>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
